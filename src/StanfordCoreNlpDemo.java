@@ -22,7 +22,7 @@ public class StanfordCoreNlpDemo {
       xmlOut = new PrintWriter(args[2]);
     }
     Properties props = new Properties();
-    props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+    props.put("annotators", "tokenize, ssplit, pos, lemma, ner,parse");
     StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
     Annotation annotation;
     if (args.length > 0) {
